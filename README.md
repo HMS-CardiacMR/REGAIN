@@ -5,6 +5,8 @@ The repository contains a source code for Resolution-Enhancement-Generative-Adve
 ## Requirements
 
 For training and testing: pytorch, numpy
+
+
 For GUI-based testing: pytorch, numpy, scipy, PyQt5, pydicom,  PIL, qimage2ndarray, cv2
 
 ## Pretrained Model and Reconstructed Results 
