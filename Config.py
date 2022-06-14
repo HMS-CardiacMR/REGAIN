@@ -10,7 +10,7 @@ torch.manual_seed(123)
 cudnn.benchmark = True
 cudnn.deterministic = False
 
-use_gpu=True
+use_gpu=False
 
 if use_gpu:
     device = torch.device("cuda:0")
@@ -19,7 +19,7 @@ else :
     device = torch.device("cpu")
 
 # Runing mode.
-mode = "train"
+mode = "validate"
 
 # ==============================================================================
 #                              Train configure
@@ -92,7 +92,7 @@ if mode == "validate":
     generator = GeneratorRRDB(1, filters=64, num_res_blocks=23).to(device)
     discriminator = Discriminator(input_shape=(1, image_size, image_size)).to(device)
 
-    generator.load_state_dict(torch.load("./samples/G_Trasfer_epoch500.pth", map_location=device))
+    generator.load_state_dict(torch.load("./PretrainedModel/Pretrained_Model_REGAIN_epoch500.pth", map_location=device))
 
     lr_dir = dataroot+"/Test_LR_mag/"
     hr_dir = dataroot+"/Test_HR_mag/"
