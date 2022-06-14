@@ -1,7 +1,6 @@
 import os
 import datetime
 import torch.backends.cudnn as cudnn
-from torch.utils.tensorboard import SummaryWriter
 from Models import *
 # ==============================================================================
 #                              Common configure
@@ -76,9 +75,6 @@ if mode == "train":
 
     Tensor = torch.cuda.FloatTensor if torch.cuda.is_available() else torch.Tensor
 
-    # 7. Training log.
-    times = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
-    writer = SummaryWriter(os.path.join("samples", "logs", times))
 
 
 # ==============================================================================
