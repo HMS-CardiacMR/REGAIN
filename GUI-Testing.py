@@ -1,7 +1,7 @@
 ######
-# Author : Siyeop Yoon
+# Author : ANNONYMIZED
 # Last Update : May 26, 2022
-# https://cardiacmr.hms.harvard.edu/
+# https://ANNONYMIZED/
 ######
 
 import pydicom
