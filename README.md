@@ -12,14 +12,12 @@ For GUI-based testing: torch, numpy, scipy, PyQt5, pydicom,  PIL, qimage2ndarray
 ## Pretrained Model and Reconstructed Results 
 
 ### Pretrained Model 
-The pretrained model can be found at Dataverse of Harvard Cardiovascular MR Center (https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/4PQS82).
+The pretrained model can be found at Dataverse of ANNONYMIZED (ANNONYMIZED).
 Please refer file name "Pretrained_Model_REGAIN_epoch500-1.pth".
 
 
 ### Reconstructed Results
-The testing result from 113 patients can be found at Dataverse of Harvard Cardiovascular MR Center (https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/4PQS82). The results present reconstructed image data 1) Breath-hold GRAPPA-accelerated ECG-gated segmented Cine 2) Free-breathing CS-accelerated Real-time Cine at rest, 3)Free-breathing CS-accelerated Real-time Cine at Physiological Stress, and 4)Breath-hold GRAPPA-accelerated 2D LGE 
-
-
+The testing result from 181 patients can be found at Dataverse of ANNONYMIZED (ANNONYMIZED). The results present reconstructed image data 1) Breath-hold GRAPPA-accelerated ECG-gated segmented Cine 2) Free-breathing CS-accelerated Real-time Cine
 
 ## File Descriptions
 -Config.py: The configuratioFile Descriptionsn file for defining a cuda machine, dataroot folder, and hyperparameters during training
