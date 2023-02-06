@@ -13,7 +13,7 @@ For GUI-based testing: torch, numpy, scipy, PyQt5, pydicom,  PIL, qimage2ndarray
 
 ### Pretrained Model 
 The pretrained model can be found at Dataverse of Harvard Cardiac MR center (https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/4PQS82).
-Please refer file name "Pretrained_Model_REGAIN_epoch500-1.pth".
+Please refer file name "Pretrained_Model_REGAIN_epoch500-1.pth" (Link : https://dataverse.harvard.edu/api/access/datafile/6922233).
 
 
 ### Reconstructed Results
