@@ -27,7 +27,6 @@ def RestoreRescaler(Arr,minval,maxval):
 
 
 def main() -> None:
-    generator.half()
     generator.eval()
 
 
@@ -40,13 +39,13 @@ def main() -> None:
 
         lr_path = os.path.join(lr_dir, filenames[index])
         lr_image = np.load(lr_path)
-        lr_image= PercentileRescaler(lr_image)
+        lr_image, minVal, maxVal= PercentileRescaler(lr_image)
 
-        hr_tensor, minVal, maxVal = image2tensor(lr_image).unsqueeze(0).unsqueeze(0).to(device)
+        hr_tensor = image2tensor(lr_image).unsqueeze(0).unsqueeze(0).to(device)
         with torch.no_grad():
 
 
-            sr_tensor = generator(hr_tensor.half())
+            sr_tensor = generator(hr_tensor)
             sr_tensor = sr_tensor.squeeze()
             img = torch.from_numpy(np.array(sr_tensor.to('cpu'), np.float32, copy=False))
             sr_image = np.array(img)
