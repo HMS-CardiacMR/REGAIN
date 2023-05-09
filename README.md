@@ -2,6 +2,9 @@
 
 The repository contains a source code for Resolution-Enhancement-Generative-Adversarial-Inline-Network (REGAIN). REGAIN is a generative adversarial neural network for REGAINing image sharpness and Spatial resolution. The trained network generates a resolution-enhanced image in the Phase-encoding (ky) direction in MRI.
 
+### NOTE
+k-space filtering should be turned off before using REGAIN.
+
 ## Requirements
 
 For training and testing: torch, numpy
